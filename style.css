@@ -1,0 +1,193 @@
+* {
+    font-size: 5vmin;
+  }
+
+  
+  .card {
+    background-color: #bfddf5;
+  
+    width: auto;
+    height: auto;
+
+    border: solid black 1px;
+    margin: 0px;
+    padding: 1px;
+    padding-bottom: 100%;
+
+    text-align: center;
+
+    cursor: default;
+
+    font-size:3vmin;
+    display: block;
+  }
+  
+  .card.no1 {
+    background-image: url(one.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no2 {
+    background-image: url(two.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no3 {
+    background-image: url(three.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no4 {
+    background-image: url(four.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no5 {
+    background-image: url(five.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no6 {
+    background-image: url(six.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no7 {
+    background-image: url(seven.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.no8 {
+    background-image: url(eight.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .card.hidden {
+    background-color: #bae396;
+    cursor: pointer;
+  }
+  .card.mine {
+    background-image: url(bomb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: #f5bfce;
+  }
+  .card.flag {
+    background-image: url(flag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #bae396;
+  }
+  
+  .grid {
+    display: grid;
+    padding:5px;
+    width: calc(70vh);
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+  }
+
+  .menuwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .menu {
+    width: calc(70vh);
+    margin-top: 2rem;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0.5em;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .menuButton {
+    padding: 5px 0.5em ;
+    border: 0px solid black;
+    background-color:rgba(245, 191, 206, 0.8);
+    margin: 5px;
+    margin-right: 8vmin;
+    cursor: pointer;
+    font-size:4vmin;
+  }
+
+  .status {
+    font-size:4vmin;
+    color: black;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  .status > * {
+    margin-right: 5px;
+  }
+  
+  .menuButton:hover {
+    color: white;
+    background: black;
+  }
+  
+  .gridwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  
+  #overlay.active {
+    visibility: visible;
+  }
+  
+  #overlayin {
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border: solid black 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+  }
+  
+  p.big {
+    font-size: 2em !important;
+  }
+  
+  #overlayin * {
+    margin: 0px;
+  }
+  
